@@ -1,0 +1,157 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/css/styles.css" />
+    <link rel="stylesheet" href="./public/css/styles-media.css" />
+    <title>Document</title>
+</head>
+<body>
+    <div class="navigationbar">
+        <img class="icon" src="assests/logo.jpg" />
+        <i class="fas fa-search"></i>
+        <div class="navigationbar-main">
+            <img src="assests/home.jpg" />
+            <img src="assests/news.jpg" />
+            <img src="assests/task.jpg" />
+            <img src="assests/profile.jpg"/>
+        </div>
+    </div>
+    <div class="container">
+        <div class="info-card">
+            <div class="info-header">
+                <img class="info-img" src="https://static.hollywoodreporter.com/sites/default/files/2019/03/avatar-publicity_still-h_2019-928x523.jpg" alt="" />
+                <div class="info-metadata">
+                    <h1>Hi Mike,</h1>
+                    <p>welcome back</p>
+                </div>
+            </div>
+            <div class="account">
+                <h3>Today</h3>
+                <h2>$19,892</h2>
+                <p>Account balance</p>
+                <h4>$4,0000</h4>
+                <p>Year-to-Date Contributions</p>
+                <h4>$1,892</h4>
+                <p>Total Interest</p>
+                <select type="select" placeholder="I want to">
+                    <option>I want to</option>
+                </select>
+            </div>
+            <div class="transactions">
+                <h3>Recent Transactions</h3>
+                <div class="card-transactions">
+                    <p>2020-08-07</p>
+                    <h5>Withdrawal Transfer to Bank-XXX111</h5>
+                </div>
+                <div class="card-transactions">
+                    <p>2020-08-07</p>
+                    <h5>Withdrawal Transfer to Bank-XXX111</h5>
+                </div>
+                <div class="card-transactions">
+                    <p>2020-08-07</p>
+                    <h5>Withdrawal Transfer to Bank-XXX111</h5>
+                </div>
+            </div>
+        </div>
+        <div class="center">
+            <div class="center-header">
+                <p>Retirement Income</p>
+                <h2>Starting Year 2056</h2>
+                <div class="center-goals">
+                    <div class="goals">
+                        <h2>$3000,000</h2>
+                        <p>My Goal</p>
+                    </div>
+                    <div class="goals">
+                        <h2>59%</h2>
+                        <p>Goal Achieved</p>
+                    </div>
+                    <div class="goals">
+                        <h2>$300</h2>
+                        <p>Est. Montly Income</p>
+                    </div>
+                </div>
+            </div>
+            <div class="center-bar">
+                <h4>Contributions Overtime</h4>
+                
+                <div class="bar">
+                    <canvas id="bar-graph"></canvas>
+                </div>
+            </div>
+            <div class="center-peers">
+                <h4>How do I compare to my peers?</h4>
+                <p>These numbers respresent current goal of achievement</p>
+                <div class="graph-pie">
+                    <div class="pie-metadata">
+                        <div class="pie-ques">
+                            <span><strong>Age :</strong></span>
+                            <select>
+                                <option>Under 30</option>
+                            </select>
+                        </div>
+                        <div class="pie-ques">
+                            <span><strong>Salary :</strong></span>
+                            <select>
+                                <option>K20 - K30</option>
+                            </select>
+                        </div>
+                        <div class="pie-ques">
+                            <span><strong>Gender :</strong></span>
+                            <select>
+                                <option>Male</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="pie-chart">
+                        <img src="assests/graph.jpg" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-card">
+            <div class="right-main">
+                <div class="right">
+                    <h4 style="margin-bottom: 20px;">Retirement Strategy</h4>
+                    <div class="right-card-content">
+                        <h5>Employee Contribution</h5>
+                        <div class="slider">
+                            <input class="range" type="range" value="80" >
+                            <span><strong>12%</strong></span>
+                        </div>
+                    </div>
+                    <div class="right-card-content">
+                        <h5>Retirement Age</h5>
+                        <div class="slider">
+                            <input class="range" type="range" value="60" >
+                            <span><strong>65</strong></span>
+                        </div>
+                    </div>
+                    <br />
+                    <div style="display: flex; justify-content: space-between;">
+                        <h5>Employer Contribution</h5>
+                        <h5>8.4%</h5>
+                    </div>
+                    <div style="display: flex; justify-content: space-between;">
+                        <h5>Interest Rate</h5>
+                        <h5>5%</h5>
+                    </div>
+                    <button>Update</button>
+                    <h5 style="color:#4834FE; display: block; margin: 20px auto;">View Help Docs ></h5>
+                </div>
+            </div>
+            <div class="help">
+                <p style="color: #858585; margin: 3px 0px;">Are you considering a</p>
+                <h5 style="margin: 2px 0px">Housing Advance?</h5>
+                <p style="margin:3px 0px;font-size:10px">Limited time reduced interest</p>
+                <p style="margin:4px 0px; color: #4834FE;">Learn More ></p>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/5292cd057e.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="public/js/script.js"></script>
+</body>
+</html>
